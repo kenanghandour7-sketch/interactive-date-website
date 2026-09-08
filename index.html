@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Date Me? 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page 1: Date Invitation -->
+    <div id="page1" class="page active">
+        <div class="container">
+            <div class="card">
+                <h1 class="title">Finally found a lover boy 😍</h1>
+                <div class="content">
+                    <h2 class="question">Will you go on a<br>date with me?</h2>
+                    <div class="cute-image">
+                        <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Sky -->
+                            <rect width="400" height="250" fill="#87CEEB"/>
+                            <!-- Grass -->
+                            <rect y="180" width="400" height="70" fill="#90EE90"/>
+                            
+                            <!-- Left Character (Penguin) -->
+                            <ellipse cx="100" cy="160" rx="35" ry="40" fill="white" stroke="black" stroke-width="2"/>
+                            <circle cx="100" cy="120" r="25" fill="white" stroke="black" stroke-width="2"/>
+                            <circle cx="95" cy="115" r="4" fill="black"/>
+                            <circle cx="105" cy="115" r="4" fill="black"/>
+                            <ellipse cx="100" cy="135" rx="3" ry="5" fill="black"/>
+                            <path d="M 90 145 Q 85 150 90 155" stroke="black" stroke-width="2" fill="none"/>
+                            <path d="M 110 145 Q 115 150 110 155" stroke="black" stroke-width="2" fill="none"/>
+                            <circle cx="85" cy="100" r="15" fill="#87CEEB" stroke="black" stroke-width="2"/>
+                            
+                            <!-- Right Character (Bear) -->
+                            <circle cx="300" cy="160" r="40" fill="#D2691E" stroke="black" stroke-width="2"/>
+                            <circle cx="280" cy="140" r="12" fill="#D2691E" stroke="black" stroke-width="2"/>
+                            <circle cx="320" cy="140" r="12" fill="#D2691E" stroke="black" stroke-width="2"/>
+                            <circle cx="278" cy="138" r="3" fill="black"/>
+                            <circle cx="322" cy="138" r="3" fill="black"/>
+                            <ellipse cx="300" cy="160" rx="3" ry="5" fill="black"/>
+                            <path d="M 295 170 Q 300 175 305 170" stroke="black" stroke-width="2" fill="none"/>
+                            
+                            <!-- Heart between them -->
+                            <path d="M 200 100 L 210 90 Q 215 85 220 90 L 230 100 Q 225 110 215 120 Q 200 110 200 100 Q 200 110 185 120 Q 175 110 170 100 L 180 90 Q 185 85 190 90 Z" fill="#FF69B4" stroke="#FF1493" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <div class="button-container">
+                        <button id="yesBtn" class="btn btn-yes">Yes, I'd love to! 💕</button>
+                        <button id="noBtn" class="btn btn-no">No</button>
+                    </div>
+                </div>
+                <p class="made-with">Made with ❤️</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: Calendar -->
+    <div id="page2" class="page">
+        <div class="container">
+            <div class="card">
+                <h1 class="title">Pick a date! 📅</h1>
+                <p class="subtitle">Kies een dag om op date te gaan</p>
+                <div class="calendar-container">
+                    <div id="calendar"></div>
+                </div>
+                <button id="confirmDateBtn" class="btn btn-yes" disabled>Confirm Date</button>
+                <button id="backBtn" class="btn btn-secondary">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3: Email -->
+    <div id="page3" class="page">
+        <div class="container">
+            <div class="card">
+                <h1 class="title">Last step! 💌</h1>
+                <p class="subtitle">Enter your email to confirm the date</p>
+                <div class="email-confirmation">
+                    <p class="selected-date" id="selectedDateDisplay"></p>
+                    <input type="email" id="emailInput" placeholder="Your email address" class="email-input">
+                    <button id="submitBtn" class="btn btn-yes">Send Confirmation</button>
+                    <button id="backToCalendarBtn" class="btn btn-secondary">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 4: Success -->
+    <div id="page4" class="page">
+        <div class="container">
+            <div class="card success-card">
+                <h1 class="title">🎉 Hooray! 🎉</h1>
+                <p class="subtitle">Your date has been scheduled!</p>
+                <div class="success-message">
+                    <p id="successText"></p>
+                    <p style="font-size: 18px; color: #666; margin-top: 20px;">A confirmation email has been sent! 💌</p>
+                </div>
+                <button id="homeBtn" class="btn btn-yes">Back to Home</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
